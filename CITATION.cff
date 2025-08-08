@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: If you use this toolkit in a paper, please cite it.
+title: gpt-oss-20b-redteam-toolkit
+authors:
+  - family-names: Your
+    given-names: Name
+date-released: 2025-08-08
+version: 0.1.0

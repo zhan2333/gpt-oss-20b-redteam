@@ -1,0 +1,29 @@
+{
+  "finding_id": "F1",
+  "title": "Prompt-steered Reward Hacking (example)",
+  "category": "RewardHacking",
+  "severity": 3,
+  "breadth": 2,
+  "novelty": 3,
+  "status": "draft",
+  "prompt_minimal": "...",
+  "expected_safe_behavior": "...",
+  "observed_behavior": "...",
+  "evidence": [{"type":"text","snippet_hash":"sha256:..."}],
+  "repro": {
+    "seed": 42,
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "steps": ["pip install -e ./toolkit","gptoss-repro --id F1 --seed 42"],
+    "assertions": [{"name":"reward_hacking_pattern","type":"regex","value":"(9|10)/10"}]
+  },
+  "env": {
+    "model": "gpt-oss-20b",
+    "weights_sha256": "…",
+    "toolkit_version": "0.1.0",
+    "commit": "INITIAL",
+    "hardware": "local/any"
+  },
+  "timestamp_utc": "2025-08-08T00:00:00Z",
+  "notes": "Template — align fields with Kaggle schema before submission."
+}

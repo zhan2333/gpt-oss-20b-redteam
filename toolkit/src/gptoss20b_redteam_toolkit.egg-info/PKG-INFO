@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: gptoss20b-redteam-toolkit
+Version: 0.1.0
+Summary: Repro & assertions for gpt-oss-20b red-teaming
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: regex
+Requires-Dist: numpy
+Requires-Dist: pytest

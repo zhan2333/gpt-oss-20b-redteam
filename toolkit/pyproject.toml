@@ -1,0 +1,14 @@
+[project]
+name = "gptoss20b-redteam-toolkit"
+version = "0.1.0"
+requires-python = ">=3.10"
+description = "Repro & assertions for gpt-oss-20b red-teaming"
+readme = "README.md"
+dependencies = ["regex", "numpy", "pytest"]
+
+[project.scripts]
+gptoss-repro = "toolkit.repro:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
